@@ -38,7 +38,7 @@ sql: bard_nested_subtotals is {
         created_at AS inventory_items_created_at
     FROM read_parquet('inventory_items.parquet')
     )
-    SELECT
+        SELECT
     year,
     product_department,
     product_category,
